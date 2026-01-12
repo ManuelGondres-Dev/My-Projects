@@ -25,7 +25,6 @@ Root.geometry("1280x720")
 ChosenOption = tk.StringVar(Root)
 SavedUI = []
 
-#Very lazy way of loading data lol
 try:
       with open("Highest Score.json","r") as File:
             Data = json.load(File)
@@ -126,4 +125,5 @@ UpdateUI(True)
 #print(Questions)
 
 Root.mainloop()
+
 
